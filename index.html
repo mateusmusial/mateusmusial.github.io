@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mateus Musial - Front-End Developer</title>
     <link href="/public/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-green-400">Hello world!</h1>
+    <header>
+      <div class="flex fixed bg-sky-900 w-full px-20 py-4 mx-auto">
+        <div class="container flex items-center mx-auto">
+          <div>
+            <h2 class="uppercase font-bold text-lg tracking-widest text-white">
+              Mateus Musial
+            </h2>
+          </div>
+          <div class="flex justify-end flex-1 md:hidden text-white text-3xl">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="items-end flex-1 text-white font-bold hidden md:flex">
+            <nav class="flex-1">
+              <ul class="flex justify-end flex-1">
+                <li class="px-4">
+                  <a href="#" class="text-sm uppercase">Portfólio</a>
+                </li>
+                <li class="px-4">
+                  <a href="#" class="text-sm uppercase">Sobre</a>
+                </li>
+                <li class="px-4">
+                  <a href="#" class="text-sm uppercase">Contato</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        class="bg-wall-theme bg-banner flex flex-col justify-center py-40 px-4"
+      >
+        <img src="./public/mateus.jpg" alt="" class="rounded-full mx-auto" />
+        <h1
+          class="uppercase mx-auto pt-10 text-4xl font-bold tracking-widest text-white"
+        >
+          Mateus Musial
+        </h1>
+        <div></div>
+        <div></div>
+      </div>
+    </main>
   </body>
 </html>
