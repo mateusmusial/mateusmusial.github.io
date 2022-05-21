@@ -14,13 +14,17 @@
   <body>
     <header>
       <div
+        id="mainNav"
         class="flex bg-gradient-to-b from-sky-500 fixed w-full px-20 py-4 mx-auto"
       >
         <div class="container flex items-center mx-auto">
           <div>
-            <h2 class="uppercase font-bold text-lg tracking-widest text-white">
+            <a
+              href="#home"
+              class="uppercase font-bold text-lg tracking-widest text-white"
+            >
               Mateus Musial
-            </h2>
+            </a>
           </div>
           <div class="flex justify-end flex-1 md:hidden text-white text-3xl">
             <i class="fas fa-bars"></i>
@@ -29,13 +33,13 @@
             <nav class="flex-1">
               <ul class="flex justify-end flex-1">
                 <li class="px-4">
-                  <a href="#" class="text-sm uppercase">Portfólio</a>
+                  <a href="#portfolio" class="text-sm uppercase">Portfólio</a>
                 </li>
                 <li class="px-4">
-                  <a href="#" class="text-sm uppercase">Sobre</a>
+                  <a href="#about" class="text-sm uppercase">Sobre</a>
                 </li>
                 <li class="px-4">
-                  <a href="#" class="text-sm uppercase">Contato</a>
+                  <a href="#contact" class="text-sm uppercase">Contato</a>
                 </li>
               </ul>
             </nav>
@@ -43,7 +47,7 @@
         </div>
       </div>
     </header>
-    <main class="">
+    <main class="" id="home">
       <div
         class="bg-wall-theme bg-banner flex flex-col justify-center py-40 px-4"
       >
@@ -58,7 +62,10 @@
           Front-End Developer
         </p>
       </div>
-      <div class="bg-zinc-900 flex flex-col justify-center py-12 px-4">
+      <div
+        id="portfolio"
+        class="bg-zinc-900 flex flex-col justify-center py-16 px-4"
+      >
         <h2
           class="uppercase text-2xl mx-auto text-white font-semibold tracking-widest"
         >
@@ -67,9 +74,13 @@
         <i
           class="fa-solid fa-layer-group fa-2x text-white font-bold mx-auto pt-5"
         ></i>
-        <div>Content</div>
+        <div class="border-b pt-4 w-5/6 mx-auto container"></div>
+        <div class="h-96">Content</div>
       </div>
-      <div class="bg-zinc-900 flex flex-col justify-center py-12 px-4">
+      <div
+        id="about"
+        class="bg-zinc-900 flex flex-col justify-center py-16 px-4"
+      >
         <h2
           class="uppercase text-2xl mx-auto text-white font-semibold tracking-widest"
         >
@@ -78,9 +89,49 @@
         <i
           class="fa-solid fa-address-card fa-2x text-white font-bold mx-auto pt-5"
         ></i>
-        <div>Content</div>
+        <div class="border-b pt-4 w-5/6 mx-auto container"></div>
+        <div class="container mx-auto text-white pt-6">
+          <div class="w-2/3 mx-auto text-justify">
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              nihil dolor quod provident atque enim dignissimos suscipit
+              laudantium, ipsam, rerum nobis! Molestiae dolorum dolore earum
+              harum dolor facere explicabo autem?
+            </p>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel
+              nihil? Maxime corrupti iusto deleniti dolore ullam nostrum aliquam
+              pariatur odit debitis et nulla suscipit eius blanditiis, numquam
+              laudantium eum!
+            </p>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              odit modi vel quibusdam, qui, exercitationem harum eveniet, minima
+              suscipit placeat nobis eum aspernatur mollitia. Id odit eaque eius
+              omnis totam. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quo voluptatum, placeat iure expedita voluptate sunt
+              delectus adipisci nisi, aperiam, labore facilis praesentium illo
+              excepturi libero officia voluptatem vitae? Ipsa, error?
+            </p>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel
+              nihil? Maxime corrupti iusto deleniti dolore ullam nostrum aliquam
+              pariatur odit debitis et nulla suscipit eius blanditiis, numquam
+              laudantium eum!
+            </p>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              odit modi vel quibusdam, qui, exercitationem harum eveniet, minima
+              suscipit placeat nobis eum aspernatur mollitia. Id odit eaque eius
+              omnis totam.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="bg-zinc-900 flex flex-col justify-center py-12 px-4">
+      <div
+        id="contact"
+        class="bg-zinc-900 flex flex-col justify-center py-16 px-4"
+      >
         <h2
           class="uppercase text-2xl mx-auto text-white font-semibold tracking-widest"
         >
@@ -89,8 +140,43 @@
         <i
           class="fa-solid fa-phone fa-2x text-white font-bold mx-auto pt-5"
         ></i>
-        <div>Content</div>
+        <div class="border-b pt-4 w-5/6 mx-auto container"></div>
+        <div class="container mx-auto text-white pt-6">
+          <div class="w-2/3 mx-auto text-center">
+            <p class="">
+              <a href="#" class="">
+                <i class="fa-brands fa-github fa-xl pr-2"></i>github.com
+              </a>
+            </p>
+            <p class="pt-3">
+              <a href="#">
+                <i class="fa-brands fa-facebook fa-xl pr-2"></i>facebook.com
+              </a>
+            </p>
+            <p class="pt-3">
+              <a href="#">
+                <i class="fa-brands fa-linkedin fa-xl pr-2"></i>linkedin.com
+              </a>
+            </p>
+            <p class="pt-3">
+              <a href="#">
+                <i class="fa-brands fa-whatsapp fa-xl pr-2"></i>+5500000000
+              </a>
+            </p>
+            <p class="pt-3">
+              <a href="">
+                <i class="fa-solid fa-envelope fa-xl pr-2"></i>email@email.com
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
+    <footer>
+      <div class="bg-black flex justify-center p-4">
+        <p class="text-white text-sm">Copyright &copy; Mateus Musial 2022</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
