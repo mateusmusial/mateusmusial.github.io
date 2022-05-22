@@ -14,7 +14,7 @@
   <body>
     <header>
       <div
-        class="flex bg-gradient-to-b from-sky-500 fixed w-full px-3 md:px-20 py-4 mx-auto"
+        class="flex bg-gradient-to-b from-sky-500 bg-zinc-800 bg-opacity-95 fixed w-full px-3 md:px-20 py-4 mx-auto rounded-b-2xl"
       >
         <div class="container flex items-center mx-auto">
           <div>
@@ -22,26 +22,66 @@
               href="#home"
               class="uppercase font-bold text-lg tracking-widest text-white"
             >
+              <i class="fa-solid fa-code text-white font-bold mx-auto"></i>
               Mateus Musial
             </a>
           </div>
-          <div class="flex justify-end flex-1 md:hidden text-white text-3xl">
+          <div
+            id="menu-nav"
+            class="flex justify-end flex-1 md:hidden text-white text-3xl"
+          >
             <i class="fas fa-bars"></i>
           </div>
           <div class="items-end flex-1 text-white font-bold hidden md:flex">
             <nav class="flex-1">
               <ul class="flex justify-end flex-1">
                 <li class="px-4">
-                  <a href="#portfolio" class="text-sm uppercase">Portfólio</a>
+                  <a href="#portfolio" class="text-sm uppercase hover:text-base"
+                    >Portfólio</a
+                  >
                 </li>
                 <li class="px-4">
-                  <a href="#about" class="text-sm uppercase">Sobre</a>
+                  <a href="#about" class="text-sm uppercase hover:text-base"
+                    >Sobre</a
+                  >
                 </li>
                 <li class="px-4">
-                  <a href="#contact" class="text-sm uppercase">Contato</a>
+                  <a href="#contact" class="text-sm uppercase hover:text-base"
+                    >Contato</a
+                  >
                 </li>
               </ul>
             </nav>
+          </div>
+          <!-- Mobile Navegator -->
+          <div
+            id="mobile-nav"
+            class="bg-zinc-900 opacity-90 fixed inset-0 z-50 hidden"
+          >
+            <div class="flex h-screen justify-end items-center">
+              <div
+                class="flex flex-col bg-gradient-to-l from-sky-500 bg-zinc-800 rounded-l-2xl h-screen py-4"
+              >
+                <div id="close-nav" class="flex justify-end text-white px-3">
+                  <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+                <nav class="text-white py-16 px-10 font-bold">
+                  <ul class="flex items-center flex-col">
+                    <li class="px-4">
+                      <a href="#portfolio" class="text-lg uppercase"
+                        >Portfólio</a
+                      >
+                    </li>
+                    <li class="px-4 py-6">
+                      <a href="#about" class="text-lg uppercase">Sobre</a>
+                    </li>
+                    <li class="px-4">
+                      <a href="#contact" class="text-lg uppercase">Contato</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
