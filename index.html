@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-zinc-900">
     <header>
       <div
         class="flex bg-gradient-to-b from-sky-500 bg-zinc-800 bg-opacity-95 fixed w-full px-3 md:px-20 py-4 mx-auto rounded-b-2xl"
@@ -27,7 +27,7 @@
             </a>
           </div>
           <div
-            id="menu-nav"
+            id="icon-bar-nav"
             class="flex justify-end flex-1 md:hidden text-white text-3xl"
           >
             <i class="fas fa-bars"></i>
@@ -61,28 +61,31 @@
             <div class="flex h-screen justify-end items-center">
               <div
                 class="flex flex-col bg-gradient-to-l from-sky-500 bg-zinc-800 bg-opacity-95 rounded-l-2xl h-screen py-4"
+                onclick="event.stopPropagation()"
               >
-                <div id="close-nav" class="flex justify-end text-white px-3">
-                  <i class="fa-solid fa-xmark fa-2x"></i>
+                <div class="flex justify-end text-white px-3">
+                  <i class="fa-solid fa-xmark fa-2x" id="icon-close-nav"></i>
                 </div>
                 <nav class="text-white py-16 px-10 font-bold">
                   <ul class="flex items-center flex-col">
                     <li class="px-4">
                       <a
                         href="#portfolio"
-                        class="text-lg uppercase hover:underline"
+                        class="text-lg uppercase hover:underline link-mobile"
                         >Portfólio</a
                       >
                     </li>
                     <li class="px-4 py-6">
-                      <a href="#about" class="text-lg uppercase hover:underline"
+                      <a
+                        href="#about"
+                        class="text-lg uppercase hover:underline link-mobile"
                         >Sobre</a
                       >
                     </li>
                     <li class="px-4">
                       <a
                         href="#contact"
-                        class="text-lg uppercase hover:underline"
+                        class="text-lg uppercase hover:underline link-mobile"
                         >Contato</a
                       >
                     </li>
