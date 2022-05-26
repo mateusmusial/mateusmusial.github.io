@@ -14,6 +14,21 @@ function closeMobileNav() {
   iconBarsNav.classList.remove("hidden");
 }
 
+function bgNavBar() {
+  const navbarBg = document.body.querySelector("#main-nav");
+  if (!navbarBg) {
+    return;
+  }
+  if (window.scrollY === 0) {
+    navbarBg.classList.remove("bg-zinc-800");
+  } else {
+    navbarBg.classList.add("bg-zinc-800");
+  }
+}
+
+bgNavBar();
+document.addEventListener("scroll", bgNavBar);
+
 document
   .querySelector("#icon-bar-nav")
   .addEventListener("click", openMobileNav);
